@@ -66,7 +66,7 @@ class VFSGuestFS(object):
             self.setup_os_static()                                              
                                                                                 
     def setup_os_static(self):                                                  
-        print "Mount guest OS image %(imgfile)s partition %(part)s"%\           
+        print "Mount guest OS image %(imgfile)s partition %(part)s"%\
                 {'imgfile': self.imgfile, 'part': str(self.partition)}          
                                                                                 
         if self.partition:                                                      
@@ -107,8 +107,8 @@ class VFSGuestFS(object):
                 self.handle.mount_options("", mount[1], mount[0])               
                 root_mounted = True                                             
             except RuntimeError as e:                                           
-                msg = "Error mounting %(device)s to %(dir)s in image"\          
-                        " %(imgfile)s with libguestfs (%(e)s)" % \              
+                msg = "Error mounting %(device)s to %(dir)s in image"\
+                        " %(imgfile)s with libguestfs (%(e)s)" % \
                       {'imgfile': self.imgfile, 'device': mount[1],             
                        'dir': mount[0], 'e': e}                                 
                 if root_mounted:                                                
