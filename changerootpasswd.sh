@@ -7,8 +7,8 @@
 # Author: xuriwuyun <xuriwuyun@gmail.com>                                       
 # Created: 11/19/2014 15:36:21                                                  
 # Last_modified: 11/19/2014 15:45:46                                            
-                                                                                
-echo $#                                                                         
+
+                                                                        
 if [ $# -ne 2 ]                                                                 
 then                                                                            
     echo USAGE: changerootpasswd image_file password                            
